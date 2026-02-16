@@ -7,7 +7,7 @@ import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { getTrades } from "@/lib/api";
+import { apiGet } from "@/lib/api";
 
 type Trade = { id: number; trader_id: number; symbol: string; side: string; status: string; position_pct: number | null; ts: string | null };
 
@@ -38,7 +38,7 @@ export default function TradesPage() {
 
   const { data } = useQuery({
     queryKey: ["trades", query],
-    queryFn: () => getTrades(`/trades?${query}`) as Promise<TradesResponse>,
+    queryFn: () => apiGet<TradesResponse>(`/trades?${query}`),
   });
 
   const columns = useMemo<ColumnDef<Trade>[]>(

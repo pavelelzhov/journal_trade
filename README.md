@@ -1,22 +1,26 @@
 # journal_trade
 
-Cloud journal + deterministic parser + web UI demo.
+Cloud journal skeleton v1.
 
-## UI live at
-https://paveleIzhov.github.io/journal_trade/
+## Components
+- FastAPI: `src/api/main.py`
+- DB models/session: `src/db/`
+- Telegram bot (aiogram): `src/bot/bot.py`
+- Parse worker: `src/worker/parse_worker.py`
+- Deterministic parser: `src/parser.py`
 
-## How to run locally
+## Local DB
 ```bash
-cd web
-npm i
-npm run dev
+docker compose up -d postgres
 ```
 
-Open: http://localhost:3000/journal_trade/dashboard
-
-## Backend tests
+## Migrations
 ```bash
-python -m py_compile $(find src -name '*.py' -type f)
+alembic upgrade head
+```
+
+## Run tests
+```bash
 pytest -vv
 ```
 
@@ -24,3 +28,5 @@ pytest -vv
 ```bash
 ./scripts/daily_backup.sh
 ```
+
+Use cron for daily run (example in `docs/architecture_v1.md`).
