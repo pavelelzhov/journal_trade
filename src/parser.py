@@ -275,9 +275,3 @@ def parse_text(text: str) -> list[dict[str, Any]]:
 
 def load_fixture(path: str | Path) -> str:
     return Path(path).read_text(encoding="utf-8")
-
-
-
-def split_blocks(text: str) -> list[str]:
-    """Alias for v1 splitter name used by tests/spec wording."""
-    return split_setups(text)
