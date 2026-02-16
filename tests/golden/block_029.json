@@ -1,0 +1,36 @@
+{
+  "status": "READY",
+  "confidence": 0.8,
+  "signal": {
+    "symbol": "BTCUSDT",
+    "side": "short",
+    "entry": {
+      "type": "market",
+      "price": null
+    },
+    "entries": [
+      {
+        "type": "limit",
+        "price": 2.0
+      },
+      {
+        "type": "limit",
+        "price": 67887.6
+      },
+      {
+        "type": "limit",
+        "price": 70400.0
+      }
+    ],
+    "sl": 71286.9,
+    "tps": [
+      61119.4
+    ],
+    "total_position_pct": 5.0,
+    "alloc_fracs": []
+  },
+  "errors": [],
+  "warnings": [
+    "market entry without explicit price"
+  ]
+}

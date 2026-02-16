@@ -1,0 +1,26 @@
+{
+  "status": "READY",
+  "confidence": 0.95,
+  "signal": {
+    "symbol": "ARBUSDT",
+    "side": "long",
+    "entry": {
+      "type": "limit",
+      "price": 0.171
+    },
+    "entries": [
+      {
+        "type": "limit",
+        "price": 0.171
+      }
+    ],
+    "sl": 0.167,
+    "tps": [
+      0.183
+    ],
+    "total_position_pct": 3.0,
+    "alloc_fracs": []
+  },
+  "errors": [],
+  "warnings": []
+}

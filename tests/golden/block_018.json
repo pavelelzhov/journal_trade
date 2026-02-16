@@ -1,0 +1,31 @@
+{
+  "status": "READY",
+  "confidence": 0.8,
+  "signal": {
+    "symbol": "PAXG",
+    "side": "long",
+    "entry": {
+      "type": "market",
+      "price": 4678.0
+    },
+    "entries": [
+      {
+        "type": "limit",
+        "price": 4678.0
+      }
+    ],
+    "sl": 4457.3,
+    "tps": [
+      4895.0,
+      4971.0,
+      5282.0,
+      5631.0
+    ],
+    "total_position_pct": 1.0,
+    "alloc_fracs": []
+  },
+  "errors": [],
+  "warnings": [
+    "default total position percent applied: 1%"
+  ]
+}
