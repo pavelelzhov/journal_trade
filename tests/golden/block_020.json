@@ -1,0 +1,21 @@
+{
+  "status": "DRAFT",
+  "confidence": 0.5,
+  "signal": {
+    "symbol": "ZRO",
+    "side": "short",
+    "entry": null,
+    "entries": [],
+    "sl": 2.3656,
+    "tps": [
+      1225.0,
+      7373.0
+    ],
+    "total_position_pct": null,
+    "alloc_fracs": []
+  },
+  "errors": [
+    "missing required fields or ambiguous parse"
+  ],
+  "warnings": []
+}

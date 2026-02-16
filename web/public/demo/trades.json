@@ -1,0 +1,10 @@
+{
+  "items": [
+    {"id": 1, "symbol": "BTCUSDT", "side": "long", "status": "CLOSED", "position_pct": 1.0, "ts": "2026-02-01T10:00:00Z", "entries": [{"price": 42000}], "sl": 41000, "tps": [43500, 44500], "r": 2.1, "notes": "Breakout", "tags": ["breakout", "trend"]},
+    {"id": 2, "symbol": "ETHUSDT", "side": "short", "status": "OPEN", "position_pct": 0.8, "ts": "2026-02-03T09:30:00Z", "entries": [{"price": 2550}], "sl": 2620, "tps": [2450], "r": 0.0, "notes": "Retest", "tags": ["retest"]},
+    {"id": 3, "symbol": "SOLUSDT", "side": "long", "status": "CLOSED", "position_pct": 0.7, "ts": "2026-02-04T12:00:00Z", "entries": [{"price": 102}], "sl": 98, "tps": [108, 112], "r": 1.4, "notes": "Range breakout", "tags": ["range"]},
+    {"id": 4, "symbol": "XRPUSDT", "side": "short", "status": "CLOSED", "position_pct": 0.5, "ts": "2026-02-05T15:10:00Z", "entries": [{"price": 0.61}], "sl": 0.64, "tps": [0.58], "r": -1.0, "notes": "False setup", "tags": ["loss"]},
+    {"id": 5, "symbol": "DOGEUSDT", "side": "long", "status": "DRAFT", "position_pct": 1.0, "ts": "2026-02-06T07:45:00Z", "entries": [{"price": 0.12}], "sl": 0.11, "tps": [0.14], "r": 0.0, "notes": "Awaiting trigger", "tags": ["draft"]}
+  ],
+  "total": 5
+}

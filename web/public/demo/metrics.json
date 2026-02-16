@@ -1,0 +1,21 @@
+{
+  "kpi": {
+    "total_trades": 5,
+    "winrate": 50.0,
+    "profit_factor": 1.45,
+    "expectancy": 0.32
+  },
+  "r_histogram": [
+    {"r": -1, "count": 1},
+    {"r": 0, "count": 2},
+    {"r": 1, "count": 1},
+    {"r": 2, "count": 1}
+  ],
+  "breakdown_by_symbol": [
+    {"symbol": "BTCUSDT", "count": 1},
+    {"symbol": "ETHUSDT", "count": 1},
+    {"symbol": "SOLUSDT", "count": 1},
+    {"symbol": "XRPUSDT", "count": 1},
+    {"symbol": "DOGEUSDT", "count": 1}
+  ]
+}

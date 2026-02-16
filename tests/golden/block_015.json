@@ -1,0 +1,30 @@
+{
+  "status": "READY",
+  "confidence": 0.8,
+  "signal": {
+    "symbol": "CVXUSDT",
+    "side": "short",
+    "entry": {
+      "type": "market",
+      "price": 1.992
+    },
+    "entries": [
+      {
+        "type": "limit",
+        "price": 1.992
+      }
+    ],
+    "sl": 2.0364,
+    "tps": [
+      9457.0,
+      8936.0,
+      7608.0
+    ],
+    "total_position_pct": 1.0,
+    "alloc_fracs": []
+  },
+  "errors": [],
+  "warnings": [
+    "default total position percent applied: 1%"
+  ]
+}
