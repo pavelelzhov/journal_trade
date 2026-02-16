@@ -1,0 +1,30 @@
+{
+  "status": "READY",
+  "confidence": 0.8,
+  "signal": {
+    "symbol": "VANAUSDT",
+    "side": "short",
+    "entry": {
+      "type": "market",
+      "price": 1.7931
+    },
+    "entries": [
+      {
+        "type": "limit",
+        "price": 1.7931
+      }
+    ],
+    "sl": 1.9204,
+    "tps": [
+      66.0,
+      4933.0,
+      4224.0
+    ],
+    "total_position_pct": 1.0,
+    "alloc_fracs": []
+  },
+  "errors": [],
+  "warnings": [
+    "default total position percent applied: 1%"
+  ]
+}

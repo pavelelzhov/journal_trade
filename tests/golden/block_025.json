@@ -1,0 +1,26 @@
+{
+  "status": "READY",
+  "confidence": 0.95,
+  "signal": {
+    "symbol": "LTCUSDT",
+    "side": "long",
+    "entry": {
+      "type": "limit",
+      "price": 68.88
+    },
+    "entries": [
+      {
+        "type": "limit",
+        "price": 68.88
+      }
+    ],
+    "sl": 68.2,
+    "tps": [
+      72.0
+    ],
+    "total_position_pct": 4.5,
+    "alloc_fracs": []
+  },
+  "errors": [],
+  "warnings": []
+}
