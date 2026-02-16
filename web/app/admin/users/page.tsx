@@ -2,20 +2,12 @@
 
 import { useQuery } from "@tanstack/react-query";
 import { Card } from "@/components/ui/card";
-import { getMode } from "@/components/mode-switch";
-import { readAccess } from "@/components/access-panel";
+import { apiGet } from "@/lib/api";
 
 type UsersResponse = { items: Array<{ user_id: number; telegram_user_id: number; role: string; trader_id: number | null }> };
 
 export default function AdminUsersPage() {
-  const { data, isError } = useQuery({ queryKey: ["admin-users"], queryFn: async () => {
-    if (getMode() === "demo") return { items: [] } as UsersResponse;
-    const access = readAccess();
-    const base = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000";
-    const r = await fetch(`${base}/admin/users`, { headers: { "X-Role": access.role, "X-Telegram-User-Id": String(access.telegram_user_id) } });
-    if (!r.ok) throw new Error("forbidden");
-    return r.json() as Promise<UsersResponse>;
-  } });
+  const { data, isError } = useQuery({ queryKey: ["admin-users"], queryFn: () => apiGet<UsersResponse>("/admin/users") });
 
   if (isError) return <Card>Admin only. Set role=ADMIN in access panel.</Card>;
 

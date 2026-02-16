@@ -4,7 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { useMemo, useState } from "react";
-import { getMetrics } from "@/lib/api";
+import { apiGet } from "@/lib/api";
 import { Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
 type MetricsResponse = {
@@ -24,7 +24,7 @@ export default function DashboardPage() {
 
   const { data } = useQuery({
     queryKey: ["metrics", query],
-    queryFn: () => getMetrics() as Promise<MetricsResponse>,
+    queryFn: () => apiGet<MetricsResponse>(`/metrics${query ? `?${query}` : ""}`),
   });
 
   const kpi = data?.kpi ?? { total_trades: 0, winrate: 0, profit_factor: 0, expectancy: 0 };
