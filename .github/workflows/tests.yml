@@ -19,4 +19,4 @@ jobs:
           pip install pytest
       - name: Run tests
         run: |
-          pytest -q
+          pytest -vv
