@@ -1,0 +1,36 @@
+{
+  "status": "READY",
+  "confidence": 0.8,
+  "signal": {
+    "symbol": "PAXGUSDT",
+    "side": "long",
+    "entry": {
+      "type": "market",
+      "price": null
+    },
+    "entries": [
+      {
+        "type": "limit",
+        "price": 2.0
+      },
+      {
+        "type": "limit",
+        "price": 5079.2
+      },
+      {
+        "type": "limit",
+        "price": 5054.8
+      }
+    ],
+    "sl": 5039.1,
+    "tps": [
+      5115.0
+    ],
+    "total_position_pct": 0.8,
+    "alloc_fracs": []
+  },
+  "errors": [],
+  "warnings": [
+    "market entry without explicit price"
+  ]
+}
