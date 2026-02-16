@@ -1,0 +1,35 @@
+{
+  "status": "READY",
+  "confidence": 0.8,
+  "signal": {
+    "symbol": "DOGEUSDT",
+    "side": "long",
+    "entry": {
+      "type": "market",
+      "price": null
+    },
+    "entries": [
+      {
+        "type": "limit",
+        "price": 2.0
+      },
+      {
+        "type": "limit",
+        "price": 0.09384
+      }
+    ],
+    "sl": 0.08413,
+    "tps": [
+      0.10582,
+      0.11985,
+      0.14707
+    ],
+    "total_position_pct": 1.0,
+    "alloc_fracs": []
+  },
+  "errors": [],
+  "warnings": [
+    "market entry without explicit price",
+    "default total position percent applied: 1%"
+  ]
+}
