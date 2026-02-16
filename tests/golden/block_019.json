@@ -1,0 +1,22 @@
+{
+  "status": "DRAFT",
+  "confidence": 0.5,
+  "signal": {
+    "symbol": "NMR",
+    "side": "short",
+    "entry": null,
+    "entries": [],
+    "sl": 10.294,
+    "tps": [
+      637.0,
+      307.0,
+      909.0
+    ],
+    "total_position_pct": null,
+    "alloc_fracs": []
+  },
+  "errors": [
+    "missing required fields or ambiguous parse"
+  ],
+  "warnings": []
+}
