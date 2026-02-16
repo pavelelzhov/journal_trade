@@ -1,16 +1,18 @@
 # journal_trade
 
-Cloud journal skeleton v1 + Top Journal UI v1.
+Cloud journal skeleton v1.
 
-## Run locally
+## Components
+- FastAPI: `src/api/main.py`
+- DB models/session: `src/db/`
+- Telegram bot (aiogram): `src/bot/bot.py`
+- Parse worker: `src/worker/parse_worker.py`
+- Deterministic parser: `src/parser.py`
+
+## Local DB
 ```bash
 docker compose up -d postgres
-
-docker compose up api web
 ```
-
-- API: http://localhost:8000
-- Web: http://localhost:3000
 
 ## Migrations
 ```bash
@@ -26,3 +28,5 @@ pytest -vv
 ```bash
 ./scripts/daily_backup.sh
 ```
+
+Use cron for daily run (example in `docs/architecture_v1.md`).
