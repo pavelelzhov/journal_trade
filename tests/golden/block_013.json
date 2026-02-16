@@ -1,0 +1,34 @@
+{
+  "status": "READY",
+  "confidence": 0.95,
+  "signal": {
+    "symbol": "CFXUSDT",
+    "side": "long",
+    "entry": {
+      "type": "limit",
+      "price": 0.0744
+    },
+    "entries": [
+      {
+        "type": "limit",
+        "price": 0.0744
+      },
+      {
+        "type": "limit",
+        "price": 0.0719
+      }
+    ],
+    "sl": 0.07,
+    "tps": [
+      0.0788,
+      0.082
+    ],
+    "total_position_pct": 0.071,
+    "alloc_fracs": [
+      "1/3",
+      "2/3"
+    ]
+  },
+  "errors": [],
+  "warnings": []
+}

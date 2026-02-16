@@ -1,0 +1,34 @@
+{
+  "status": "DRAFT",
+  "confidence": 0.5,
+  "signal": {
+    "symbol": "RUNEUSDT",
+    "side": "short",
+    "entry": {
+      "type": "limit",
+      "price": 2.0
+    },
+    "entries": [
+      {
+        "type": "limit",
+        "price": 2.0
+      },
+      {
+        "type": "limit",
+        "price": 0.413
+      }
+    ],
+    "sl": 0.4181,
+    "tps": [
+      0.4094,
+      0.39,
+      0.384
+    ],
+    "total_position_pct": 1.2,
+    "alloc_fracs": []
+  },
+  "errors": [
+    "directional validation conflict"
+  ],
+  "warnings": []
+}

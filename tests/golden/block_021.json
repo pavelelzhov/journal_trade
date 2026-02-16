@@ -1,0 +1,26 @@
+{
+  "status": "READY",
+  "confidence": 0.95,
+  "signal": {
+    "symbol": "SUIUSDT",
+    "side": "long",
+    "entry": {
+      "type": "limit",
+      "price": 0.972
+    },
+    "entries": [
+      {
+        "type": "limit",
+        "price": 0.972
+      }
+    ],
+    "sl": 0.956,
+    "tps": [
+      1.036
+    ],
+    "total_position_pct": 4.0,
+    "alloc_fracs": []
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,26 @@
+{
+  "status": "READY",
+  "confidence": 0.95,
+  "signal": {
+    "symbol": "SOLUSDT",
+    "side": "long",
+    "entry": {
+      "type": "limit",
+      "price": 80.4
+    },
+    "entries": [
+      {
+        "type": "limit",
+        "price": 80.4
+      }
+    ],
+    "sl": 78.8,
+    "tps": [
+      90.0
+    ],
+    "total_position_pct": 6.0,
+    "alloc_fracs": []
+  },
+  "errors": [],
+  "warnings": []
+}
