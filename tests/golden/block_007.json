@@ -1,0 +1,32 @@
+{
+  "status": "DRAFT",
+  "confidence": 0.5,
+  "signal": {
+    "symbol": "ETHUSDT",
+    "side": "long",
+    "entry": {
+      "type": "limit",
+      "price": 2025.0
+    },
+    "entries": [
+      {
+        "type": "limit",
+        "price": 2025.0
+      }
+    ],
+    "sl": 19850.3,
+    "tps": [
+      2065.0,
+      2110.0,
+      2170.0
+    ],
+    "total_position_pct": 1.0,
+    "alloc_fracs": []
+  },
+  "errors": [
+    "directional validation conflict"
+  ],
+  "warnings": [
+    "default total position percent applied: 1%"
+  ]
+}

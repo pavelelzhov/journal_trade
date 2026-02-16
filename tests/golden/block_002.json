@@ -1,0 +1,30 @@
+{
+  "status": "READY",
+  "confidence": 0.8,
+  "signal": {
+    "symbol": "ETHUSDT",
+    "side": "short",
+    "entry": {
+      "type": "limit",
+      "price": 2092.0
+    },
+    "entries": [
+      {
+        "type": "limit",
+        "price": 2092.0
+      }
+    ],
+    "sl": 2109.0,
+    "tps": [
+      2072.0,
+      2045.0,
+      2020.0
+    ],
+    "total_position_pct": 1.0,
+    "alloc_fracs": []
+  },
+  "errors": [],
+  "warnings": [
+    "default total position percent applied: 1%"
+  ]
+}
