@@ -1,0 +1,35 @@
+{
+  "status": "READY",
+  "confidence": 0.8,
+  "signal": {
+    "symbol": "XRPUSDT",
+    "side": "short",
+    "entry": {
+      "type": "market",
+      "price": null
+    },
+    "entries": [
+      {
+        "type": "limit",
+        "price": 2.0
+      },
+      {
+        "type": "limit",
+        "price": 1.5226
+      }
+    ],
+    "sl": 1.7447,
+    "tps": [
+      1.4189,
+      0.5419,
+      0.4586
+    ],
+    "total_position_pct": 1.0,
+    "alloc_fracs": []
+  },
+  "errors": [],
+  "warnings": [
+    "market entry without explicit price",
+    "default total position percent applied: 1%"
+  ]
+}
