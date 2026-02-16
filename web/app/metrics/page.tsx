@@ -3,7 +3,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { Bar, BarChart, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis, Cell } from "recharts";
 import { Card } from "@/components/ui/card";
-import { getMetrics } from "@/lib/api";
+import { apiGet } from "@/lib/api";
 
 type MetricsResponse = {
   kpi: { total_trades: number; winrate: number; profit_factor: number; expectancy: number };
@@ -12,7 +12,7 @@ type MetricsResponse = {
 };
 
 export default function MetricsPage() {
-  const { data } = useQuery({ queryKey: ["metrics-full"], queryFn: () => getMetrics() as Promise<MetricsResponse> });
+  const { data } = useQuery({ queryKey: ["metrics-full"], queryFn: () => apiGet<MetricsResponse>("/metrics") });
   const breakdown = data?.breakdown_by_symbol ?? [];
 
   return (

@@ -1,33 +1,26 @@
 # journal_trade
 
-Cloud journal + deterministic parser + UI demo.
+Cloud journal skeleton v1.
 
-## UI Demo link
-After enabling GitHub Pages for this repository, the demo is published at:
+## Components
+- FastAPI: `src/api/main.py`
+- DB models/session: `src/db/`
+- Telegram bot (aiogram): `src/bot/bot.py`
+- Parse worker: `src/worker/parse_worker.py`
+- Deterministic parser: `src/parser.py`
 
-`https://<org-or-user>.github.io/<repo>/`
-
-(For this repo name: `journal_trade` -> `https://<org-or-user>.github.io/journal_trade/`)
-
-## How to run locally
+## Local DB
 ```bash
-# backend stack (optional for API mode)
-docker compose up -d postgres api
-
-# UI demo
-cd web
-npm install
-npm run dev
+docker compose up -d postgres
 ```
 
-Open http://localhost:3000
-
-- Default mode is **Demo** (reads `/public/demo/*.json`)
-- Switch to **API** mode in the header to call backend via `NEXT_PUBLIC_API_BASE_URL`
-
-## Backend tests
+## Migrations
 ```bash
-python -m py_compile $(find src -name '*.py' -type f)
+alembic upgrade head
+```
+
+## Run tests
+```bash
 pytest -vv
 ```
 
@@ -35,3 +28,5 @@ pytest -vv
 ```bash
 ./scripts/daily_backup.sh
 ```
+
+Use cron for daily run (example in `docs/architecture_v1.md`).

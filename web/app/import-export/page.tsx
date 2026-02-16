@@ -3,10 +3,19 @@
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { apiUpload, exportUrl } from "@/lib/api";
+import { apiUpload } from "@/lib/api";
+import { readAccess } from "@/components/access-panel";
+
+const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
 async function downloadWithHeaders(format: "csv" | "json") {
-  const res = await fetch(exportUrl(format));
+  const access = readAccess();
+  const res = await fetch(`${API}/export?format=${format}`, {
+    headers: {
+      "X-Role": access.role,
+      "X-Telegram-User-Id": String(access.telegram_user_id),
+    },
+  });
   const blob = await res.blob();
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
