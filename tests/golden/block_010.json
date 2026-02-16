@@ -1,0 +1,31 @@
+{
+  "status": "READY",
+  "confidence": 0.8,
+  "signal": {
+    "symbol": "BTCUSDT",
+    "side": "long",
+    "entry": {
+      "type": "limit",
+      "price": 88900.0
+    },
+    "entries": [
+      {
+        "type": "limit",
+        "price": 88900.0
+      }
+    ],
+    "sl": 88400.0,
+    "tps": [
+      90000.0,
+      91000.0,
+      92000.0,
+      93000.0
+    ],
+    "total_position_pct": 1.0,
+    "alloc_fracs": []
+  },
+  "errors": [],
+  "warnings": [
+    "default total position percent applied: 1%"
+  ]
+}
