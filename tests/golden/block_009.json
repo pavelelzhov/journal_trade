@@ -1,0 +1,34 @@
+{
+  "status": "READY",
+  "confidence": 0.8,
+  "signal": {
+    "symbol": "BTCUSDT",
+    "side": "long",
+    "entry": {
+      "type": "zone",
+      "price_min": 77100.0,
+      "price_max": 77400.0
+    },
+    "entries": [
+      {
+        "type": "zone",
+        "price_min": 77100.0,
+        "price_max": 77400.0
+      }
+    ],
+    "sl": 77000.0,
+    "tps": [
+      78000.0,
+      79000.0,
+      80000.0,
+      82000.0
+    ],
+    "total_position_pct": 1.0,
+    "alloc_fracs": []
+  },
+  "errors": [],
+  "warnings": [
+    "zone entry interpreted from range",
+    "default total position percent applied: 1%"
+  ]
+}
